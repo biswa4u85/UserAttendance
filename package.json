@@ -10,8 +10,10 @@
     "build": "npm run clean && npm run tsc --",
     "lint": "tslint src/**/*.ts",
     "watch": "npm run build -- -w",
-    "start:ios": "npm run build && concurrently -r 'npm run watch' 'react-native run-ios'",
-    "start:android": "npm run build && concurrently -r 'npm run watch' 'react-native run-android'"
+    "start:ios":
+      "npm run build && concurrently -r 'npm run watch' 'react-native run-ios'",
+    "start:android":
+      "npm run build && concurrently -r 'npm run watch' 'react-native run-android'"
   },
   "dependencies": {
     "@shoutem/ui": "^0.21.3",
@@ -20,6 +22,7 @@
     "moment": "^2.19.1",
     "react": "16.0.0-beta.5",
     "react-native": "0.49.3",
+    "react-native-aws-cognito-js": "0.0.7",
     "react-native-drawer": "^2.5.0",
     "react-native-rest-client": "^0.1.1",
     "react-native-router-flux": "^4.0.0-beta.22",
